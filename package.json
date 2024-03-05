@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./src/server.ts",
+    "build": "tsc",
     "migration:create": "node ./db/migration.js add migration ",
     "migration:run": "node ./db/migration.js run ",
     "migration:up": "node ./db/migration.js up ",
