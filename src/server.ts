@@ -39,7 +39,7 @@ app.use(helmet());
 // app.use(cors(corsConfig));
 app.use(
   cors({
-    origin: "https://huychat.netlify.app/",
+    origin: process.env.CLIENT_URL,
     credentials: true,
     methods: ["GET", "POST", "OPTIONS"],
   })
